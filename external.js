@@ -43,7 +43,7 @@ function drawGrid(gridSize = 16) {
 
 function increase() {
   var size = prompt("new grid size");
-  while (size < 0 || size > 100) {
+  while (size < 0 || size > 100 || size.length == 0) {
     size = prompt("choose a size > 0 but <= 100");
   }
   const grid = document.querySelector("#grid");
